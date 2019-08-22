@@ -39,12 +39,18 @@ class HealthCheckTest extends \TestCase
 
 class MockCheck extends HealthCheck
 {
-    public function run() { return 'all good'; }
+    public function run()
+    {
+        return 'all good';
+    }
 }
 
 class MockCheckTitle extends HealthCheck
 {
     protected $title = 'Custom Title';
 
-    public function run() { return 'all good'; }
+    public function run()
+    {
+        return 'all good';
+    }
 }

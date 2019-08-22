@@ -1,5 +1,5 @@
 <?php
-namespace Gentux\Healthz\Support;
+namespace Gentux\Healthz;
 
 /**
  * Helper for managing collections of stuffs

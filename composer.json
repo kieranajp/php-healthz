@@ -17,26 +17,10 @@
             "tests/TestCase.php"
         ]
     },
-    "require": {
-        "guzzlehttp/guzzle": "~6.0",
-        "aws/aws-sdk-php": "~3.0",
-        "illuminate/contracts": "5.*",
-        "illuminate/database": "5.*",
-        "illuminate/queue": "5.*",
-        "illuminate/console": "5.*",
-        "twig/twig": "~1.0"
-    },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
         "mockery/mockery": "^0.9.4",
         "gecko-packages/gecko-memcache-mock": "^1.0",
         "codeclimate/php-test-reporter": "^0.4.2"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Gentux\\Healthz\\Support\\HealthzServiceProvider"
-            ]
-        }
     }
 }

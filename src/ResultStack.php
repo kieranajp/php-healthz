@@ -1,8 +1,6 @@
 <?php
 namespace Gentux\Healthz;
 
-use Gentux\Healthz\Support\Stack;
-
 /**
  * Manages a set of results from running a stack of health checks
  *
@@ -15,7 +13,7 @@ class ResultStack
         Stack::push as stackPush;
     }
 
-    public function __construct(array $results=[])
+    public function __construct(array $results = [])
     {
         $this->items = $results;
     }
@@ -51,7 +49,7 @@ class ResultStack
     public function hasWarnings()
     {
         $hasWarning = false;
-        foreach($this->all() as $result) {
+        foreach ($this->all() as $result) {
             if ($result->warned()) {
                 $hasWarning = true;
                 break;
